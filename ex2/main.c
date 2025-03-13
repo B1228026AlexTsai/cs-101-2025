@@ -1,3 +1,11 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -47,27 +55,27 @@ void emp_readfile(employee_t emp[]) {
 int main()
 {
     employee_t emp[3];
-    e[0].id = 1;
-    e[0].age = 20;
-    strcpy(e[0].name,"IU");
-    e[0].salary = 30000.0;
+    emp[0].id = 1;
+    emp[0].age = 20;
+    strcpy(emp[0].name,"IU");
+    emp[0].salary = 30000.0;
     
-    e[1].id = 2;
-    e[1].age = 26;
-    strcpy(e[1].name,"taylor");
-    e[1].salary = 36000.0;
+    emp[1].id = 2;
+    emp[1].age = 26;
+    strcpy(emp[1].name,"taylor");
+    emp[1].salary = 36000.0;
     
-    e[2].id = 3;
-    e[2].age = 31;
-    strcpy(e[2].name,"swift");
-    e[2].salary = 90000.0;
+    emp[2].id = 3;
+    emp[2].age = 31;
+    strcpy(emp[2].name,"swift");
+    emp[2].salary = 90000.0;
     
     emp_writefile(emp, 3);
     employee_t readread_emp[10];
-    emp_readfile(read_emp);
+    emp_readfile(readread_emp);
     
     for (int i=0;i<3;i++) {
-        emp_info(read_emp[i]);
+        emp_info(readread_emp[i]);
     }
     
     return 0;
